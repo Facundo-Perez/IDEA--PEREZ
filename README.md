@@ -1,2 +1,2 @@
-# IDEA--PEREZ---4to-Desafio
-Se añadio una animacion al titulo del index, solo para entrega de desafio. Se completara a futuro.
+# IDEA--PEREZ---Desafio Bootstrap
+Se modifico con Bootstrap el index y el html de Contacto.
