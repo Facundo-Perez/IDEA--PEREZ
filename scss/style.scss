@@ -97,13 +97,18 @@ letter-spacing: 1px;
 height: 250px;
 }
 /*GALERIA*/
+
+/*MIXIN GALERIA*/
+@mixin galery ($dis , $gtc , $gtr , $gap , $height){
+  display: $dis;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  gap: $gap;
+  height: $height;
+}
 .galeriaContainer {
-display: grid; 
-grid-template-columns: 1fr 1fr 1fr; 
-grid-template-rows: 1fr 1fr; 
-gap: 5px 5px; 
-padding-left: 80px;
-height: 100vh;
+  @include galery(grid,1fr 1fr 1fr , 1fr 1fr , 5px 5px , 100vh );
+  padding-left: 80px;
 }
 
 div { 
@@ -134,10 +139,7 @@ div {
     margin: 180px
     }
 .galeriaContainer {
-  grid-template-columns: 1fr 1fr; 
-grid-template-rows: 1fr 1fr; 
-gap: 5px 5px;
-  height: 100vh;
+  @include galery( grid,1fr 1fr , 1fr 1fr , 5px 5px , 100vh );
   
 }
 div img {
@@ -158,10 +160,7 @@ div img {
     opacity: 85%;
     }
 .galeriaContainer {
-  height: 100vh;
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr ; 
-  gap: 5px 5px;
+  @include galery(grid,1fr ,1fr , 5px 5px , 100vh );
 }
 div img{
   border-radius: 10px;

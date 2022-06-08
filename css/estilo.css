@@ -85,13 +85,14 @@ footer {
   height: 250px; }
 
 /*GALERIA*/
+/*MIXIN GALERIA*/
 .galeriaContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 5px 5px;
-  padding-left: 80px;
-  height: 100vh; }
+  height: 100vh;
+  padding-left: 80px; }
 
 div img {
   filter: grayscale(100) blur(1px);
@@ -114,6 +115,7 @@ div img {
     opacity: 85%;
     margin: 180px; }
   .galeriaContainer {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px 5px;
@@ -133,10 +135,11 @@ div img {
     color: #0F0F0F;
     opacity: 85%; }
   .galeriaContainer {
-    height: 100vh;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    gap: 5px 5px; }
+    gap: 5px 5px;
+    height: 100vh; }
   div img {
     border-radius: 10px;
     height: 150px;
