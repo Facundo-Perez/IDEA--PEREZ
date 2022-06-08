@@ -1,7 +1,8 @@
 @charset "UTF-8";
 * {
   padding: 0%;
-  margin: 0%; }
+  margin: 0%;
+  box-sizing: border-box; }
 
 body {
   font-family: 'Bebas Neue'; }
@@ -33,9 +34,7 @@ div ul {
   width: 500px;
   color: #0F0F0F;
   opacity: 85%;
-  border-radius: 5px;
-  margin: 180px;
-  padding-left: 5px; }
+  margin: 180px; }
 
 .txtPlace {
   margin: 0px; }
@@ -108,9 +107,12 @@ div img {
     cursor: pointer; }
 
 /*TAMAÑO DE IMAGENES DE GALERIA*/
-@media (max-width: 1024px) {
-  .form {
-    width: 100%; }
+@media (max-width: 1280px) {
+  .formCont {
+    width: 500px;
+    color: #0F0F0F;
+    opacity: 85%;
+    margin: 180px; }
   .galeriaContainer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -121,9 +123,15 @@ div img {
     width: 250px;
     border-radius: 10px; } }
 
-@media (max-width: 576px) {
-  .form {
-    width: 100%; }
+@media (max-width: 670px) {
+  .formCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 20px;
+    color: #0F0F0F;
+    opacity: 85%; }
   .galeriaContainer {
     height: 100vh;
     grid-template-columns: 1fr;

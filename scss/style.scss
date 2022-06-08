@@ -1,6 +1,7 @@
 *{
   padding: 0%;
    margin: 0%;
+   box-sizing: border-box;
 }
 body {
 font-family:'Bebas Neue';
@@ -14,11 +15,13 @@ background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
 }
-div ul {
+div {
+     ul{
 list-style: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
+      }
 }
 
 .fondoPrincipal {
@@ -34,9 +37,7 @@ position: relative;
 width: 500px;
 color: #0F0F0F;
 opacity: 85%;
-border-radius: 5px;
-margin: 180px;
-padding-left:5px;
+margin: 180px
 }
 .txtPlace{
 margin: 0px;
@@ -66,18 +67,24 @@ color: #1E5128;
 .video{
 padding: 80px;
 }
-Nav ul li a{ 
+Nav {
+    ul{
+        li{
+            a{
 
-font-size: 25px;
-list-style: none;
-text-decoration: none;
-color: #191A19 ;
-font-family: 'Bebas Neue', cursive;
-  
+              font-size: 25px;
+              list-style: none;
+              text-decoration: none;
+              color: #191A19 ;
+              font-family: 'Bebas Neue', cursive;
+        }
+    }
+  }
 }
 footer{
 background-color: #f8f9fa
 }
+
 .fondoP{
 background-image: url(../img/fondo6.jpg);
 background-size:cover;
@@ -119,10 +126,13 @@ div {
 }
 
 /*TAMAÑO DE IMAGENES DE GALERIA*/
-@media (max-width: 1024px) {
-.form{
-  width: 100%;
-}
+@media (max-width: 1280px) {
+  .formCont{
+    width: 500px;
+    color: #0F0F0F;
+    opacity: 85%;
+    margin: 180px
+    }
 .galeriaContainer {
   grid-template-columns: 1fr 1fr; 
 grid-template-rows: 1fr 1fr; 
@@ -137,10 +147,16 @@ div img {
  }
 }
 
-@media (max-width:  576px) {
-.form{
-  width: 100%;
-}
+@media (max-width:  670px) {
+  .formCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 20px;
+    color: #0F0F0F;
+    opacity: 85%;
+    }
 .galeriaContainer {
   height: 100vh;
   grid-template-columns: 1fr; 
